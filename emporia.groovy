@@ -81,7 +81,7 @@ def getDeviceGid(){
 		
 		deviceGID.add(value.deviceGid)
 		
-		channels = value.devices[0].channels
+		channels = value.devices.channels
 		channels.each{ next_value ->
 			deviceNames.add(next_value.name)
 		}
